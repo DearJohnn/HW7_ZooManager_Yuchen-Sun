@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\obj\Debug\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>

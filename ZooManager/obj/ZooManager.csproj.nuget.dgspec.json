@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\6308\\C#\\Week7\\W7_ZooManager_HW\\ZooManager\\ZooManager.csproj": {}
+    "D:\\6308\\C#\\Week7\\HW7_Zoo Manager_Yuchen Sun\\ZooManager\\ZooManager.csproj": {}
   },
   "projects": {
-    "D:\\6308\\C#\\Week7\\W7_ZooManager_HW\\ZooManager\\ZooManager.csproj": {
+    "D:\\6308\\C#\\Week7\\HW7_Zoo Manager_Yuchen Sun\\ZooManager\\ZooManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6308\\C#\\Week7\\W7_ZooManager_HW\\ZooManager\\ZooManager.csproj",
+        "projectUniqueName": "D:\\6308\\C#\\Week7\\HW7_Zoo Manager_Yuchen Sun\\ZooManager\\ZooManager.csproj",
         "projectName": "ZooManager",
-        "projectPath": "D:\\6308\\C#\\Week7\\W7_ZooManager_HW\\ZooManager\\ZooManager.csproj",
+        "projectPath": "D:\\6308\\C#\\Week7\\HW7_Zoo Manager_Yuchen Sun\\ZooManager\\ZooManager.csproj",
         "packagesPath": "C:\\Users\\24419\\.nuget\\packages\\",
-        "outputPath": "D:\\6308\\C#\\Week7\\W7_ZooManager_HW\\ZooManager\\obj\\",
+        "outputPath": "D:\\6308\\C#\\Week7\\HW7_Zoo Manager_Yuchen Sun\\ZooManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -7,7 +7,7 @@ namespace ZooManager
         public string emoji;
         public string species;
         public string name;
-        public int reactionTime = 5; // default reaction time for animals (1 - 10)
+        public int reactionTime = 5;
         public List<string> prey = new List<string>();
         public List<string> predator = new List<string>();
         public int turnsCounter = 0;
@@ -27,11 +27,11 @@ namespace ZooManager
             
             if(turnsCounter == 1)
             {
-                Console.WriteLine($"The {name} has took {turnsCounter} turn.");
+                Console.WriteLine($"The {name} has taken {turnsCounter} turn.");
             }
             else
             {
-                Console.WriteLine($"The {name} has took {turnsCounter} turns.");
+                Console.WriteLine($"The {name} has taken {turnsCounter} turns.");
             }
         }
 
@@ -82,5 +82,6 @@ namespace ZooManager
             }
                 
         }
+
     }
 }
