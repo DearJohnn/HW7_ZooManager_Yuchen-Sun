@@ -15,6 +15,11 @@ namespace ZooManager
         static public List<List<Zone>> animalZones = new List<List<Zone>>();
         static public Zone holdingPen = new Zone(-1, -1, null);
 
+        /*Set up game
+         * Called by index page
+         * No paraemeters
+         * No return
+         */
         static public void SetUpGame()
         {
             for (var y = 0; y < numCellsY; y++)
@@ -25,6 +30,11 @@ namespace ZooManager
             }
         }
 
+        /*Add a row or column to the game board
+         * Called by index page
+         * Pass one paraemeter direction enum
+         * No return
+         */
         static public void AddZones(Direction d)
         {
             if (d == Direction.down || d == Direction.up)
@@ -51,6 +61,11 @@ namespace ZooManager
             }
         }
 
+        /*Get, take, and place the Animal to the zone
+         * Called by index page
+         * Pass one paraemeter which is the Zone be clicked
+         * No return
+         */
         static public void ZoneClick(Zone clickedZone)
         {
             Console.Write("Got animal ");
@@ -83,6 +98,11 @@ namespace ZooManager
             }
         }
 
+        /*Create a Animal object for holdingPen according to the species
+         * Called by index page
+         * Pass one paraemeter is the string of the species
+         * No return
+         */
         static public void AddAnimalToHolding(string animalType)
         {
             if (holdingPen.occupant != null) return;
@@ -94,6 +114,11 @@ namespace ZooManager
             ActivateAnimals();
         }
 
+        /*Let the animal activate every turn
+         * Called by ZoneClick and AddAnimalToHolding function
+         * No paraemeter
+         * No return
+         */
         static private void ActivateAnimals()
         {
             for (var r = 1; r < 11; r++) 
@@ -112,6 +137,11 @@ namespace ZooManager
             }
         }
 
+        /*Looking for the presence of a target animal (prey or predator) within a certain distance in four directions
+         * Called by Animal class
+         * Pass 5 parameters: search center x coordinate, y coordinate, search distance, direction, and search target
+         * return a int which is the distence between search center and target
+         */
         static public int Seek(int x, int y,int distence, Direction d, string target)
         {
             int i = 0;
@@ -147,7 +177,11 @@ namespace ZooManager
             
         }
 
-
+        /*Predators kill prey in four directions
+         * Called by Animal class
+         * Pass two parameters one this the Animal want to attack ,other one is the direction enum
+         * No return
+         */
         static public void Attack(Animal attacker, Direction d)
         {
             Console.WriteLine($"{attacker.name} is attacking {d.ToString()}");
@@ -172,6 +206,11 @@ namespace ZooManager
             animalZones[y][x].occupant = null;
         }
 
+        /*Replace chick with raptor
+         * Called by chick animal
+         * Pass one parameter which is the chick need to be repleased
+         * No return
+         */
         static public void GrowUp(Animal chick)
         {
             int x = chick.location.x;
@@ -179,6 +218,12 @@ namespace ZooManager
             animalZones[y][x].occupant = null;
             animalZones[y][x].occupant = new Raptor("Birdy");
         }
+
+        /*Look up, down, left, and right for an escape zone and move the current animal to this zone
+         * Called by Animal class
+         * Pass two parameters one this the Animal need to run ,other one is the direction enum
+         * return a bool
+         */
         static public bool Retreat(Animal runner, Direction d)
         {
             Console.WriteLine($"{runner.name} is retreating {d.ToString()}");
