@@ -58,25 +58,25 @@
             <h1 style="text-align:end">Add Animal to Holding:</h1>
         </div>
         <div class="col-1">
-            <button @onclick="@(() => Game.AddAnimalToHolding("cat"))"
+            <button @onclick="@(() => Game.AddBeingToHolding("cat"))"
                     type="button" class="sm btn btn-outline-dark">
                 <h2>🐱</h2>
             </button>
         </div>
         <div class="col-1">
-            <button @onclick="@(() => Game.AddAnimalToHolding("mouse"))"
+            <button @onclick="@(() => Game.AddBeingToHolding("mouse"))"
                     type="button" class="sm btn btn-outline-dark">
                 <h2>🐭</h2>
             </button>
         </div>
         <div class="col-1">
-            <button @onclick="@(() => Game.AddAnimalToHolding("raptor"))"
+            <button @onclick="@(() => Game.AddBeingToHolding("raptor"))"
                     type="button" class="sm btn btn-outline-dark">
                 <h2>🦅</h2>
             </button>
         </div>
         <div class="col-1">
-            <button @onclick="@(() => Game.AddAnimalToHolding("chick"))"
+            <button @onclick="@(() => Game.AddBeingToHolding("chick"))"
                     type="button" class="sm btn btn-outline-dark">
                 <h2>🐥</h2>
             </button>
@@ -109,7 +109,7 @@
                     <tr>
                         @for (var x = 0; x < Game.numCellsX; x++)
                         {
-                            var a = Game.animalZones[y][x];
+                            var a = Game.BeingZones[y][x];
                             <td>
                                 <button @onclick="@(() => Game.ZoneClick(a))"
                                         type="button" class="btn btn-outline-dark">

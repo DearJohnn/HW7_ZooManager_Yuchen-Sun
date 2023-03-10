@@ -3,8 +3,8 @@ namespace ZooManager
 {
     public class Zone
     {
-        private Animal _occupant = null;
-        public Animal occupant
+        private Being _occupant = null;
+        public Being occupant
         {
             get { return _occupant; }
             set {
@@ -35,12 +35,12 @@ namespace ZooManager
             }
         }
 
-        public Zone(int x, int y, Animal animal)
+        public Zone(int x, int y, Being being)
         {
             location.x = x;
             location.y = y;
 
-            occupant = animal;
+            occupant = being;
         }
     }
 }
