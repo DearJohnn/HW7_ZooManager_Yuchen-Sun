@@ -13,70 +13,70 @@ namespace ZooManager.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 1 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 2 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 3 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 4 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 5 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 6 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 7 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 8 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\_Imports.razor"
+#line 10 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\_Imports.razor"
 using ZooManager.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\Pages\Index.razor"
+#line 2 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\Pages\Index.razor"
 using ZooManager;
 
 #line default
@@ -91,7 +91,7 @@ using ZooManager;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 127 "D:\6308\C#\Week7\W7_ZooManager_HW\ZooManager\Pages\Index.razor"
+#line 127 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\Pages\Index.razor"
        
     protected override void OnInitialized()
     {
