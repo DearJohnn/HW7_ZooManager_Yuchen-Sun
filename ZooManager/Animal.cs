@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace ZooManager
 {
-    public class Animal: Being, IPery, IPerdator
+    public class Animal: Being, IPrey, IPredator
     {
         public List<string> predators 
         {

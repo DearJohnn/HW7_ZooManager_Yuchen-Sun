@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ZooManager
 {
-    public class Alien: Being, IPerdator
+    public class Alien: Being, IPredator
     {
         //Inherit from Being's fields and inherit from IPerdator
         public List<string> preys
