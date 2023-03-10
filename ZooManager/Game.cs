@@ -111,6 +111,7 @@ namespace ZooManager
             if (BeingType == "mouse") holdingPen.occupant = new Mouse("Squeaky");
             if (BeingType == "raptor") holdingPen.occupant = new Raptor("Birdy");
             if (BeingType == "chick") holdingPen.occupant = new Chick("Chicky");
+            if (BeingType == "alien") holdingPen.occupant = new Alien("Alien");
             Console.WriteLine($"Holding pen occupant at {holdingPen.occupant.location.x},{holdingPen.occupant.location.y}");
             //ActivateBeings();
         }
@@ -132,7 +133,7 @@ namespace ZooManager
                         if (zone.occupant != null && zone.occupant.reactionTime == r)
                         {
                             being.Add(zone.occupant);
-                            if (!zone.occupant.actRecorder)
+                            if (!zone.occupant.actRecorder)//Check if activate in current turn
                             {
                                 zone.occupant.Activate();
                             }
@@ -145,9 +146,14 @@ namespace ZooManager
                     }
                 }
             }
-            ResetActRecorder(being);
+            ResetActRecorder(being);// Reset the actrecorder
         }
 
+        /*The end of the turn restores the state of the animal to false of actrecorder
+         * Called by ActivateBeings() function
+         * Pass one parameter which is the List of all the Being on the board
+         * No return
+         */
         static private void ResetActRecorder(List<Being> being)
         {
             foreach(Being ani in being)

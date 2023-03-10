@@ -91,7 +91,7 @@ using ZooManager;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 127 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\Pages\Index.razor"
+#line 133 "D:\6308\C#\Week7\HW7_Zoo Manager_Yuchen Sun\ZooManager\Pages\Index.razor"
        
     protected override void OnInitialized()
     {

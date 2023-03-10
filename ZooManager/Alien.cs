@@ -7,6 +7,7 @@ namespace ZooManager
 {
     public class Alien: Being, IPerdator
     {
+        //Inherit from Being's fields and inherit from IPerdator
         public List<string> preys
         {
             get
@@ -25,7 +26,7 @@ namespace ZooManager
             species = "alien";
             this.name = name;
             reactionTime = 1;
-            prey = new List<string>() { "mouse", "cat" ,"chick","raptor"};
+            prey = new List<string>() { "mouse", "cat" ,"chick","raptor"};// Can Hunt all kind of Animals
 
         }
 

@@ -10,10 +10,11 @@ namespace ZooManager
         public Raptor(string name)
         {
             emoji = "🦅";
-            species = "Raptor";
+            species = "raptor";
             this.name = name;
             reactionTime = 1;
             prey = new List<string>() { "mouse", "cat" };
+            predator = new List<string>() { "alien" };
 
         }
 
@@ -21,7 +22,9 @@ namespace ZooManager
         {
             base.Activate();
             Console.WriteLine("I am a Raptor.");
+            Flee(predator, 1);
             Hunt(prey,1);
+            
         }
     }
 }
